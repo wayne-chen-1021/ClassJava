@@ -1,18 +1,14 @@
-## Getting Started
+歡迎來到 VS Code Java 開發環境！這裡是一些基礎指南，幫助你快速上手 Java 開發。
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📂 專案結構
+預設情況下，工作區包含兩個主要資料夾：
 
-## Folder Structure
+src：放置 Java 原始碼 (.java 檔案)
+lib：存放專案所需的額外函式庫 (.jar 檔案)
+此外，程式編譯後的 .class 檔案會自動存入 bin 資料夾。
 
-The workspace contains two folders by default, where:
+如果你想自訂專案結構，可以編輯 .vscode/settings.json 修改相關設定。
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+📌 依賴管理
+你可以在 VS Code 的 JAVA PROJECTS 視圖中管理專案的依賴 (lib 資料夾中的 .jar 檔案)。
+詳細說明請參考 官方指南。
