@@ -25,7 +25,7 @@ class Car {
     }
 }
 
-class CarTestDrive {
+class CarTestDrive { //2025 0225課堂練習
     public static void main(String[] args) {
         Car car1 = new Car("Toyota", "2018");
         car1.drive(100.12f);
