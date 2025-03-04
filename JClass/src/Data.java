@@ -39,7 +39,7 @@ class DataTestDrive {
         System.out.println(car2.getBrand() + car2.getYear());
         car2.drive(200);
 
-        Car car3 = new Car("Nissan", 2019);
+        //Car car3 = new Car("Nissan", 2019);
         System.out.println("Total cars: " + Car.getTotalCars());
 
     }
