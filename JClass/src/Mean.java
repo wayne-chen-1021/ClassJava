@@ -1,30 +1,29 @@
 public class Mean {
-    public int calNum(int upper) {
-        return (1+upper) * upper / 2 / upper;
+    public float calNum(int upper) {
+        return (float)(1+upper) * upper / 2 / upper;
     }
 }
 
 class RangeMean extends Mean {
-    public int calNum(int lower, int upper) {
-        int result = 0;
-        int lowerSum = lower * calNum(lower - 1);
-        int upperSum = upper * calNum(upper);
+    public float calNum(int lower, int upper) {
+        float result = 0;
+        float lowerSum = (lower - 1) * calNum(lower - 1);
+        float upperSum = upper * calNum(upper);
 
-        result = (lowerSum + upperSum) / (upper - lower +1);
+        result = (upperSum - lowerSum) / (upper - lower +1);
         return result;
     }
 }
 
 class WeightMean extends Mean {
-    public int calNum(int upper) {
-        int sum = 0, n = 0, result = 0;
+    public float calNum(int upper) {
+        float sum = 0;
+        int n = 0;
         for(int i=1; i <= upper; i++) {
             sum += i*i;
+            n += i;
         }
-        n = (1+upper) * upper / 2;
-        result = sum / n;
-        return result;
-
+        return (float)sum / n;
     }
 }
 
