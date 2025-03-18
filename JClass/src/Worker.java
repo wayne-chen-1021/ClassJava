@@ -8,6 +8,10 @@ public class Worker {
         this.name = name;
         this.salary = salary;
     }
+    public void showInfo() {
+        System.out.println("name: " + name);
+        System.out.println("salary: " + salary);
+    }
 }
 
 class WorkerTestDriver {

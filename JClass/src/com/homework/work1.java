@@ -38,6 +38,9 @@ class WeightedMeanCalculator { // 權重為數字本身
         }
         return (float)sum / n;
     }
+    public void showInfo() {
+        System.out.println("use meanCal.calNum(10)" + meanCal.calNum(10));
+    }
 }
 
 class work1TestDriver {
